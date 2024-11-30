@@ -1,0 +1,19 @@
+# Command to create SSH key
+
+ssh-keygen -t rsa -b 4096 -C "your-email"
+clip < ~/.ssh/id_rsa.pub
+
+# Add Github to Known Hosts
+ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+
+# Creating Python virtualenv in Windows
+pip install virtualenv
+python -m venv myenv
+myenv\Scripts\activate
+deactivate
+
+# Install requirements.txt
+pip install -r /path/to/requirements.txt
+
+
+pip freeze > requirements.txt

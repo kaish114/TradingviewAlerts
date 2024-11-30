@@ -14,3 +14,6 @@ deactivate
 
 # Install requirements.txt
 pip install -r /path/to/requirements.txt
+
+
+pip freeze > requirements.txt

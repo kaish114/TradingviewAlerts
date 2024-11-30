@@ -11,3 +11,6 @@ pip install virtualenv
 python -m venv myenv
 myenv\Scripts\activate
 deactivate
+
+# Install requirements.txt
+pip install -r /path/to/requirements.txt

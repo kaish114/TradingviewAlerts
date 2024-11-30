@@ -64,5 +64,6 @@ def set_webhook():
     return response.json()
 
 if __name__ == '__main__':
+    # Setting Custom Webshook
     set_webhook()
     app.run(host='0.0.0.0', port=80)

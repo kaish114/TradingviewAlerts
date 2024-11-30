@@ -1,0 +1,7 @@
+# Command to create SSH key
+
+ssh-keygen -t rsa -b 4096 -C "your-email"
+clip < ~/.ssh/id_rsa.pub
+
+# Add Github to Known Hosts
+ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
